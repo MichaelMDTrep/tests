@@ -1,0 +1,117 @@
+GuidedTour.css :root {
+    --dark-purple: #5540c7;
+    --light-purple: #909af8;
+    --light-grey: #707070;
+}
+
+.hidden {
+    display: none;
+}
+
+.connect-success__textContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Can change this later for the "arrow nub" */
+.__floater__arrow {
+    display: none;
+}
+
+.connect-success__icon {
+    margin: 0px 0.25em;
+    color: var(--light-purple);
+    height: 0;
+}
+
+.connect-success__text {
+    color: var(--light-grey);
+}
+
+.btn-primary {
+    border-radius: 25px;
+}
+
+.MuiMobileStepper-dot {
+    width: 10px !important;
+    height: 10px !important;
+    border: 1px solid var(--dark-purple) !important;
+    background-color: white !important;
+}
+
+.MuiMobileStepper-dotActive {
+    background-color: var(--dark-purple) !important;
+}
+.MuiMobileStepper-root {
+    padding: 1px !important;
+}
+
+.SatelliteView {
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0 !important;
+    border-radius: 2rem !important;
+}
+
+.Istyle {
+    height: 130px;
+    width: 180px;
+    border-radius: auto;
+    margin: auto;
+    float: left;
+}
+
+.Istyle1 {
+    height: 130px;
+    width: 180px;
+    border-radius: auto;
+    float: right;
+}
+.popup {
+    height: 300px;
+    width: 430px;
+    background-color: white;
+    /* transform: translate(60vw, 30vh); */
+    /* border-radius: 0px !important;  */
+    /* border-radius: 0% !important; */
+    position: fixed;
+    margin-top: 20vh;
+    margin-left: 65vw;
+    z-index: 200;
+}
+
+.btext {
+    display: flex;
+    width: 100%;
+    font-family: canada-type-gibson, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 5px;
+    justify-content: space-between;
+    text-align: left;
+}
+.Istyle2 {
+    width: 35%;
+    height: auto;
+    padding-bottom: 0px;
+    float: right;
+    /* bottom: 20%; */
+}
+.pbtn {
+    position: absolute;
+    opacity: 0.9;
+    border-radius: 2em;
+    font-family: canada-type-gibson, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 0.5rem, 1.5rem;
+    border: 2px solid #5540c7;
+    text-transform: uppercase;
+    background-color: #5540c7;
+    color: white;
+    margin-left: 65%;
+    margin-top: 1%;
+}

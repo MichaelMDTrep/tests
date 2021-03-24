@@ -1,0 +1,1376 @@
+{
+  "contractName": "SuperWorldToken",
+  "abi": [
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "address",
+  				"name": "_coinAddress",
+  				"type": "address"
+  			},
+  			{
+  				"internalType": "uint256",
+  				"name": "_percentageCut",
+  				"type": "uint256"
+  			},
+  			{
+  				"internalType": "uint256",
+  				"name": "_basePrice",
+  				"type": "uint256"
+  			},
+  			{
+  				"internalType": "string",
+  				"name": "_metaUrl",
+  				"type": "string"
+  			}
+  		],
+  		"stateMutability": "nonpayable",
+  		"type": "constructor"
+  	},
+  	{
+  		"anonymous": false,
+  		"inputs": [
+  			{
+  				"indexed": true,
+  				"internalType": "address",
+  				"name": "owner",
+  				"type": "address"
+  			},
+  			{
+  				"indexed": true,
+  				"internalType": "address",
+  				"name": "approved",
+  				"type": "address"
+  			},
+  			{
+  				"indexed": true,
+  				"internalType": "uint256",
+  				"name": "tokenId",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "Approval",
+  		"type": "event"
+  	},
+  	{
+  		"anonymous": false,
+  		"inputs": [
+  			{
+  				"indexed": true,
+  				"internalType": "address",
+  				"name": "owner",
+  				"type": "address"
+  			},
+  			{
+  				"indexed": true,
+  				"internalType": "address",
+  				"name": "operator",
+  				"type": "address"
+  			},
+  			{
+  				"indexed": false,
+  				"internalType": "bool",
+  				"name": "approved",
+  				"type": "bool"
+  			}
+  		],
+  		"name": "ApprovalForAll",
+  		"type": "event"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "address",
+  				"name": "to",
+  				"type": "address"
+  			},
+  			{
+  				"internalType": "uint256",
+  				"name": "tokenId",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "approve",
+  		"outputs": [],
+  		"stateMutability": "nonpayable",
+  		"type": "function"
+  	},
+  	{
+  		"anonymous": false,
+  		"inputs": [
+  			{
+  				"indexed": false,
+  				"internalType": "uint256",
+  				"name": "i",
+  				"type": "uint256"
+  			},
+  			{
+  				"indexed": false,
+  				"internalType": "string",
+  				"name": "x",
+  				"type": "string"
+  			},
+  			{
+  				"indexed": false,
+  				"internalType": "string",
+  				"name": "y",
+  				"type": "string"
+  			},
+  			{
+  				"indexed": true,
+  				"internalType": "address",
+  				"name": "b",
+  				"type": "address"
+  			},
+  			{
+  				"indexed": true,
+  				"internalType": "address",
+  				"name": "s",
+  				"type": "address"
+  			},
+  			{
+  				"indexed": false,
+  				"internalType": "uint256",
+  				"name": "p",
+  				"type": "uint256"
+  			},
+  			{
+  				"indexed": false,
+  				"internalType": "uint256",
+  				"name": "t",
+  				"type": "uint256"
+  			},
+  			{
+  				"indexed": true,
+  				"internalType": "bytes32",
+  				"name": "n",
+  				"type": "bytes32"
+  			}
+  		],
+  		"name": "B",
+  		"type": "event"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "string",
+  				"name": "geoIds",
+  				"type": "string"
+  			}
+  		],
+  		"name": "buyTokens",
+  		"outputs": [
+  			{
+  				"internalType": "bool",
+  				"name": "",
+  				"type": "bool"
+  			}
+  		],
+  		"stateMutability": "payable",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "address",
+  				"name": "buyer",
+  				"type": "address"
+  			},
+  			{
+  				"internalType": "uint256",
+  				"name": "coins",
+  				"type": "uint256"
+  			},
+  			{
+  				"internalType": "string",
+  				"name": "lat",
+  				"type": "string"
+  			},
+  			{
+  				"internalType": "string",
+  				"name": "lon",
+  				"type": "string"
+  			}
+  		],
+  		"name": "buyTokenWithCoins",
+  		"outputs": [
+  			{
+  				"internalType": "bool",
+  				"name": "",
+  				"type": "bool"
+  			}
+  		],
+  		"stateMutability": "nonpayable",
+  		"type": "function"
+  	},
+  	{
+  		"anonymous": false,
+  		"inputs": [
+  			{
+  				"indexed": false,
+  				"internalType": "uint256",
+  				"name": "i",
+  				"type": "uint256"
+  			},
+  			{
+  				"indexed": true,
+  				"internalType": "bytes32",
+  				"name": "m",
+  				"type": "bytes32"
+  			},
+  			{
+  				"indexed": false,
+  				"internalType": "string",
+  				"name": "x",
+  				"type": "string"
+  			},
+  			{
+  				"indexed": false,
+  				"internalType": "string",
+  				"name": "y",
+  				"type": "string"
+  			},
+  			{
+  				"indexed": false,
+  				"internalType": "address",
+  				"name": "b",
+  				"type": "address"
+  			},
+  			{
+  				"indexed": false,
+  				"internalType": "address",
+  				"name": "s",
+  				"type": "address"
+  			},
+  			{
+  				"indexed": false,
+  				"internalType": "uint256",
+  				"name": "p",
+  				"type": "uint256"
+  			},
+  			{
+  				"indexed": false,
+  				"internalType": "uint256",
+  				"name": "t",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "C",
+  		"type": "event"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "string",
+  				"name": "lat",
+  				"type": "string"
+  			},
+  			{
+  				"internalType": "string",
+  				"name": "lon",
+  				"type": "string"
+  			}
+  		],
+  		"name": "delistToken",
+  		"outputs": [],
+  		"stateMutability": "nonpayable",
+  		"type": "function"
+  	},
+  	{
+  		"anonymous": false,
+  		"inputs": [
+  			{
+  				"indexed": false,
+  				"internalType": "address",
+  				"name": "buyer",
+  				"type": "address"
+  			},
+  			{
+  				"indexed": false,
+  				"internalType": "uint256",
+  				"name": "coins",
+  				"type": "uint256"
+  			},
+  			{
+  				"indexed": false,
+  				"internalType": "address",
+  				"name": "_coinAddress",
+  				"type": "address"
+  			},
+  			{
+  				"indexed": false,
+  				"internalType": "bytes32",
+  				"name": "_data",
+  				"type": "bytes32"
+  			}
+  		],
+  		"name": "EventReceiveApproval",
+  		"type": "event"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "string",
+  				"name": "geoIds",
+  				"type": "string"
+  			},
+  			{
+  				"internalType": "address[]",
+  				"name": "buyers",
+  				"type": "address[]"
+  			},
+  			{
+  				"internalType": "uint256[]",
+  				"name": "buyPrices",
+  				"type": "uint256[]"
+  			}
+  		],
+  		"name": "giftTokens",
+  		"outputs": [],
+  		"stateMutability": "nonpayable",
+  		"type": "function"
+  	},
+  	{
+  		"anonymous": false,
+  		"inputs": [
+  			{
+  				"indexed": false,
+  				"internalType": "uint256",
+  				"name": "j",
+  				"type": "uint256"
+  			},
+  			{
+  				"indexed": false,
+  				"internalType": "uint256",
+  				"name": "i",
+  				"type": "uint256"
+  			},
+  			{
+  				"indexed": false,
+  				"internalType": "string",
+  				"name": "x",
+  				"type": "string"
+  			},
+  			{
+  				"indexed": false,
+  				"internalType": "string",
+  				"name": "y",
+  				"type": "string"
+  			},
+  			{
+  				"indexed": true,
+  				"internalType": "address",
+  				"name": "s",
+  				"type": "address"
+  			},
+  			{
+  				"indexed": false,
+  				"internalType": "uint256",
+  				"name": "p",
+  				"type": "uint256"
+  			},
+  			{
+  				"indexed": false,
+  				"internalType": "bool",
+  				"name": "l",
+  				"type": "bool"
+  			},
+  			{
+  				"indexed": false,
+  				"internalType": "uint256",
+  				"name": "t",
+  				"type": "uint256"
+  			},
+  			{
+  				"indexed": true,
+  				"internalType": "bytes32",
+  				"name": "n",
+  				"type": "bytes32"
+  			}
+  		],
+  		"name": "L",
+  		"type": "event"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "string",
+  				"name": "lat",
+  				"type": "string"
+  			},
+  			{
+  				"internalType": "string",
+  				"name": "lon",
+  				"type": "string"
+  			},
+  			{
+  				"internalType": "uint256",
+  				"name": "sellPrice",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "listToken",
+  		"outputs": [],
+  		"stateMutability": "nonpayable",
+  		"type": "function"
+  	},
+  	{
+  		"anonymous": false,
+  		"inputs": [
+  			{
+  				"indexed": false,
+  				"internalType": "uint256",
+  				"name": "j",
+  				"type": "uint256"
+  			},
+  			{
+  				"indexed": false,
+  				"internalType": "uint256",
+  				"name": "i",
+  				"type": "uint256"
+  			},
+  			{
+  				"indexed": true,
+  				"internalType": "bytes32",
+  				"name": "m",
+  				"type": "bytes32"
+  			},
+  			{
+  				"indexed": false,
+  				"internalType": "string",
+  				"name": "x",
+  				"type": "string"
+  			},
+  			{
+  				"indexed": false,
+  				"internalType": "string",
+  				"name": "y",
+  				"type": "string"
+  			},
+  			{
+  				"indexed": false,
+  				"internalType": "address",
+  				"name": "s",
+  				"type": "address"
+  			},
+  			{
+  				"indexed": false,
+  				"internalType": "uint256",
+  				"name": "p",
+  				"type": "uint256"
+  			},
+  			{
+  				"indexed": false,
+  				"internalType": "bool",
+  				"name": "l",
+  				"type": "bool"
+  			},
+  			{
+  				"indexed": false,
+  				"internalType": "uint256",
+  				"name": "t",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "M",
+  		"type": "event"
+  	},
+  	{
+  		"anonymous": false,
+  		"inputs": [
+  			{
+  				"indexed": true,
+  				"internalType": "address",
+  				"name": "previousOwner",
+  				"type": "address"
+  			},
+  			{
+  				"indexed": true,
+  				"internalType": "address",
+  				"name": "newOwner",
+  				"type": "address"
+  			}
+  		],
+  		"name": "OwnershipTransferred",
+  		"type": "event"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "address",
+  				"name": "buyer",
+  				"type": "address"
+  			},
+  			{
+  				"internalType": "uint256",
+  				"name": "coins",
+  				"type": "uint256"
+  			},
+  			{
+  				"internalType": "address",
+  				"name": "_coinAddress",
+  				"type": "address"
+  			},
+  			{
+  				"internalType": "bytes32",
+  				"name": "_data",
+  				"type": "bytes32"
+  			}
+  		],
+  		"name": "receiveApproval",
+  		"outputs": [],
+  		"stateMutability": "nonpayable",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "string",
+  				"name": "geoIds",
+  				"type": "string"
+  			},
+  			{
+  				"internalType": "uint256[]",
+  				"name": "sellingPrices",
+  				"type": "uint256[]"
+  			}
+  		],
+  		"name": "relistTokens",
+  		"outputs": [],
+  		"stateMutability": "nonpayable",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [],
+  		"name": "renounceOwnership",
+  		"outputs": [],
+  		"stateMutability": "nonpayable",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "address",
+  				"name": "from",
+  				"type": "address"
+  			},
+  			{
+  				"internalType": "address",
+  				"name": "to",
+  				"type": "address"
+  			},
+  			{
+  				"internalType": "uint256",
+  				"name": "tokenId",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "safeTransferFrom",
+  		"outputs": [],
+  		"stateMutability": "nonpayable",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "address",
+  				"name": "from",
+  				"type": "address"
+  			},
+  			{
+  				"internalType": "address",
+  				"name": "to",
+  				"type": "address"
+  			},
+  			{
+  				"internalType": "uint256",
+  				"name": "tokenId",
+  				"type": "uint256"
+  			},
+  			{
+  				"internalType": "bytes",
+  				"name": "_data",
+  				"type": "bytes"
+  			}
+  		],
+  		"name": "safeTransferFrom",
+  		"outputs": [],
+  		"stateMutability": "nonpayable",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "address",
+  				"name": "operator",
+  				"type": "address"
+  			},
+  			{
+  				"internalType": "bool",
+  				"name": "approved",
+  				"type": "bool"
+  			}
+  		],
+  		"name": "setApprovalForAll",
+  		"outputs": [],
+  		"stateMutability": "nonpayable",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "_basePrice",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "setBasePrice",
+  		"outputs": [],
+  		"stateMutability": "nonpayable",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "_percentageCut",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "setPercentageCut",
+  		"outputs": [],
+  		"stateMutability": "nonpayable",
+  		"type": "function"
+  	},
+  	{
+  		"anonymous": false,
+  		"inputs": [
+  			{
+  				"indexed": true,
+  				"internalType": "address",
+  				"name": "from",
+  				"type": "address"
+  			},
+  			{
+  				"indexed": true,
+  				"internalType": "address",
+  				"name": "to",
+  				"type": "address"
+  			},
+  			{
+  				"indexed": true,
+  				"internalType": "uint256",
+  				"name": "tokenId",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "Transfer",
+  		"type": "event"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "address",
+  				"name": "from",
+  				"type": "address"
+  			},
+  			{
+  				"internalType": "address",
+  				"name": "to",
+  				"type": "address"
+  			},
+  			{
+  				"internalType": "uint256",
+  				"name": "tokenId",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "transferFrom",
+  		"outputs": [],
+  		"stateMutability": "nonpayable",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "address",
+  				"name": "newOwner",
+  				"type": "address"
+  			}
+  		],
+  		"name": "transferOwnership",
+  		"outputs": [],
+  		"stateMutability": "nonpayable",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [],
+  		"name": "withdrawBalance",
+  		"outputs": [],
+  		"stateMutability": "payable",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "address",
+  				"name": "owner",
+  				"type": "address"
+  			}
+  		],
+  		"name": "balanceOf",
+  		"outputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "",
+  				"type": "uint256"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [],
+  		"name": "basePrice",
+  		"outputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "",
+  				"type": "uint256"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [],
+  		"name": "baseURI",
+  		"outputs": [
+  			{
+  				"internalType": "string",
+  				"name": "",
+  				"type": "string"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "boughtPrices",
+  		"outputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "",
+  				"type": "uint256"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [],
+  		"name": "buyId",
+  		"outputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "",
+  				"type": "uint256"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "buyIds",
+  		"outputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "",
+  				"type": "uint256"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [],
+  		"name": "coinAddress",
+  		"outputs": [
+  			{
+  				"internalType": "address",
+  				"name": "",
+  				"type": "address"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "tokenId",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "getApproved",
+  		"outputs": [
+  			{
+  				"internalType": "address",
+  				"name": "",
+  				"type": "address"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "bytes32",
+  				"name": "tokenId",
+  				"type": "bytes32"
+  			}
+  		],
+  		"name": "getGeoFromTokenId",
+  		"outputs": [
+  			{
+  				"internalType": "string",
+  				"name": "lat",
+  				"type": "string"
+  			},
+  			{
+  				"internalType": "string",
+  				"name": "lon",
+  				"type": "string"
+  			}
+  		],
+  		"stateMutability": "pure",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "string",
+  				"name": "lat",
+  				"type": "string"
+  			},
+  			{
+  				"internalType": "string",
+  				"name": "lon",
+  				"type": "string"
+  			}
+  		],
+  		"name": "getInfo",
+  		"outputs": [
+  			{
+  				"internalType": "bytes32",
+  				"name": "tokenId",
+  				"type": "bytes32"
+  			},
+  			{
+  				"internalType": "address",
+  				"name": "tokenOwner",
+  				"type": "address"
+  			},
+  			{
+  				"internalType": "bool",
+  				"name": "isOwned",
+  				"type": "bool"
+  			},
+  			{
+  				"internalType": "bool",
+  				"name": "isSelling",
+  				"type": "bool"
+  			},
+  			{
+  				"internalType": "uint256",
+  				"name": "price",
+  				"type": "uint256"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "tokenId",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "getPrice",
+  		"outputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "",
+  				"type": "uint256"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "string",
+  				"name": "lat",
+  				"type": "string"
+  			},
+  			{
+  				"internalType": "string",
+  				"name": "lon",
+  				"type": "string"
+  			}
+  		],
+  		"name": "getTokenId",
+  		"outputs": [
+  			{
+  				"internalType": "bytes32",
+  				"name": "tokenId",
+  				"type": "bytes32"
+  			}
+  		],
+  		"stateMutability": "pure",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "address",
+  				"name": "owner",
+  				"type": "address"
+  			},
+  			{
+  				"internalType": "address",
+  				"name": "operator",
+  				"type": "address"
+  			}
+  		],
+  		"name": "isApprovedForAll",
+  		"outputs": [
+  			{
+  				"internalType": "bool",
+  				"name": "",
+  				"type": "bool"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "isSellings",
+  		"outputs": [
+  			{
+  				"internalType": "bool",
+  				"name": "",
+  				"type": "bool"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [],
+  		"name": "listId",
+  		"outputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "",
+  				"type": "uint256"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [],
+  		"name": "metaUrl",
+  		"outputs": [
+  			{
+  				"internalType": "string",
+  				"name": "",
+  				"type": "string"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [],
+  		"name": "name",
+  		"outputs": [
+  			{
+  				"internalType": "string",
+  				"name": "",
+  				"type": "string"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [],
+  		"name": "owner",
+  		"outputs": [
+  			{
+  				"internalType": "address",
+  				"name": "",
+  				"type": "address"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "tokenId",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "ownerOf",
+  		"outputs": [
+  			{
+  				"internalType": "address",
+  				"name": "",
+  				"type": "address"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [],
+  		"name": "percentageCut",
+  		"outputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "",
+  				"type": "uint256"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "sellPrices",
+  		"outputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "",
+  				"type": "uint256"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [],
+  		"name": "superWorldCoin",
+  		"outputs": [
+  			{
+  				"internalType": "contract ERC20Interface",
+  				"name": "",
+  				"type": "address"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "bytes4",
+  				"name": "interfaceId",
+  				"type": "bytes4"
+  			}
+  		],
+  		"name": "supportsInterface",
+  		"outputs": [
+  			{
+  				"internalType": "bool",
+  				"name": "",
+  				"type": "bool"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [],
+  		"name": "symbol",
+  		"outputs": [
+  			{
+  				"internalType": "string",
+  				"name": "",
+  				"type": "string"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "index",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "tokenByIndex",
+  		"outputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "",
+  				"type": "uint256"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "address",
+  				"name": "owner",
+  				"type": "address"
+  			},
+  			{
+  				"internalType": "uint256",
+  				"name": "index",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "tokenOfOwnerByIndex",
+  		"outputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "",
+  				"type": "uint256"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "tokenId",
+  				"type": "uint256"
+  			}
+  		],
+  		"name": "tokenURI",
+  		"outputs": [
+  			{
+  				"internalType": "string",
+  				"name": "",
+  				"type": "string"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	},
+  	{
+  		"inputs": [],
+  		"name": "totalSupply",
+  		"outputs": [
+  			{
+  				"internalType": "uint256",
+  				"name": "",
+  				"type": "uint256"
+  			}
+  		],
+  		"stateMutability": "view",
+  		"type": "function"
+  	}
+  ],
+  "networks": {
+    "1": {
+      "events": {},
+      "links": {},
+      "address": "0xfd89ea92f6ec07d955e2adbba2400ca1a6369028",
+      "transactionHash": "0x4643db289e40f7522921ba985247cb5cb7589cc2d8a121bcab8823415d4e9684"
+    },
+    "3": {
+      "events": {},
+      "links": {},
+      "address": "0x79813b8894910e1f72a972cd339c07c45a09f806",
+      "transactionHash": "0x7ffb9e38e20c5820a99a751877cb3a030c87e2b796384acd73cf7b661b13abec"
+    },
+    "4": {
+      "events": {},
+      "address": "0xD5660B784D29dE5285D5B8B3F0F0B3526816157C",
+      "transactionHash": "0xb99eb1be9be9be625c4afce33cc3be2defb0c88173f0bf424f69166762f81e3f"
+    }
+  },
+  "schemaVersion": "3.2.0",
+  "updatedAt": "2020-07-21T19:16:37.219Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {
+      "approve(address,uint256)": {
+        "details": "Approves another address to transfer the given token ID The zero address indicates there is no approved address. There can only be one approved address per token at a given time. Can only be called by the token owner or an approved operator.",
+        "params": {
+          "to": "address to be approved for the given token ID",
+          "tokenId": "uint256 ID of the token to be approved"
+        }
+      },
+      "balanceOf(address)": {
+        "details": "Gets the balance of the specified address.",
+        "params": {
+          "owner": "address to query the balance of"
+        },
+        "returns": {
+          "_0": "uint256 representing the amount owned by the passed address"
+        }
+      },
+      "baseURI()": {
+        "details": "Returns the base URI set via {_setBaseURI}. This will be automatically added as a prefix in {tokenURI} to each token's URI, or to the token ID if no specific URI is set for that token ID."
+      },
+      "getApproved(uint256)": {
+        "details": "Gets the approved address for a token ID, or zero if no address set Reverts if the token ID does not exist.",
+        "params": {
+          "tokenId": "uint256 ID of the token to query the approval of"
+        },
+        "returns": {
+          "_0": "address currently approved for the given token ID"
+        }
+      },
+      "isApprovedForAll(address,address)": {
+        "details": "Tells whether an operator is approved by a given owner.",
+        "params": {
+          "operator": "operator address which you want to query the approval of",
+          "owner": "owner address which you want to query the approval of"
+        },
+        "returns": {
+          "_0": "bool whether the given operator is approved by the given owner"
+        }
+      },
+      "name()": {
+        "details": "Gets the token name.",
+        "returns": {
+          "_0": "string representing the token name"
+        }
+      },
+      "owner()": {
+        "details": "Returns the address of the current owner."
+      },
+      "ownerOf(uint256)": {
+        "details": "Gets the owner of the specified token ID.",
+        "params": {
+          "tokenId": "uint256 ID of the token to query the owner of"
+        },
+        "returns": {
+          "_0": "address currently marked as the owner of the given token ID"
+        }
+      },
+      "renounceOwnership()": {
+        "details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner.     * NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+      },
+      "safeTransferFrom(address,address,uint256)": {
+        "details": "Safely transfers the ownership of a given token ID to another address If the target address is a contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer, and return the magic value `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))`; otherwise, the transfer is reverted. Requires the msg.sender to be the owner, approved, or operator",
+        "params": {
+          "from": "current owner of the token",
+          "to": "address to receive the ownership of the given token ID",
+          "tokenId": "uint256 ID of the token to be transferred"
+        }
+      },
+      "safeTransferFrom(address,address,uint256,bytes)": {
+        "details": "Safely transfers the ownership of a given token ID to another address If the target address is a contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer, and return the magic value `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))`; otherwise, the transfer is reverted. Requires the _msgSender() to be the owner, approved, or operator",
+        "params": {
+          "_data": "bytes data to send along with a safe transfer check",
+          "from": "current owner of the token",
+          "to": "address to receive the ownership of the given token ID",
+          "tokenId": "uint256 ID of the token to be transferred"
+        }
+      },
+      "setApprovalForAll(address,bool)": {
+        "details": "Sets or unsets the approval of a given operator An operator is allowed to transfer all tokens of the sender on their behalf.",
+        "params": {
+          "approved": "representing the status of the approval to be set",
+          "operator": "operator address to set the approval"
+        }
+      },
+      "supportsInterface(bytes4)": {
+        "details": "See {IERC165-supportsInterface}.     * Time complexity O(1), guaranteed to always use less than 30 000 gas."
+      },
+      "symbol()": {
+        "details": "Gets the token symbol.",
+        "returns": {
+          "_0": "string representing the token symbol"
+        }
+      },
+      "tokenByIndex(uint256)": {
+        "details": "Gets the token ID at a given index of all the tokens in this contract Reverts if the index is greater or equal to the total number of tokens.",
+        "params": {
+          "index": "uint256 representing the index to be accessed of the tokens list"
+        },
+        "returns": {
+          "_0": "uint256 token ID at the given index of the tokens list"
+        }
+      },
+      "tokenOfOwnerByIndex(address,uint256)": {
+        "details": "Gets the token ID at a given index of the tokens list of the requested owner.",
+        "params": {
+          "index": "uint256 representing the index to be accessed of the requested tokens list",
+          "owner": "address owning the tokens list to be accessed"
+        },
+        "returns": {
+          "_0": "uint256 token ID at the given index of the tokens list owned by the requested address"
+        }
+      },
+      "totalSupply()": {
+        "details": "Gets the total amount of tokens stored by the contract.",
+        "returns": {
+          "_0": "uint256 representing the total amount of tokens"
+        }
+      },
+      "transferFrom(address,address,uint256)": {
+        "details": "Transfers the ownership of a given token ID to another address. Usage of this method is discouraged, use {safeTransferFrom} whenever possible. Requires the msg.sender to be the owner, approved, or operator.",
+        "params": {
+          "from": "current owner of the token",
+          "to": "address to receive the ownership of the given token ID",
+          "tokenId": "uint256 ID of the token to be transferred"
+        }
+      },
+      "transferOwnership(address)": {
+        "details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

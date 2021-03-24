@@ -1,0 +1,87 @@
+// remember to import mixins in the Sass files you want to
+// include them in @ import '../../mixins/mixins.scss';
+
+@mixin widthHeight($wid, $hei) {
+    width: $wid;
+    height: $hei;
+}
+
+@mixin maxWidthHeight($maxWidth, $maxHeight) {
+    max-width: $maxWidth;
+    max-height: $maxHeight;
+}
+
+@mixin topLeftAbsolute($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+}
+
+@mixin topRightAbsolute($top, $right) {
+    position: absolute;
+    top: $top;
+    right: $right;
+}
+
+@mixin bottomLeftAbsolute($bottom, $left) {
+    position: absolute;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin bottomRightAbsolute($bottom, $right) {
+    position: absolute;
+    bottom: $bottom;
+    right: $right;
+}
+
+@mixin flexDirJusAli($direction, $justified, $alignment) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justified;
+    align-items: $alignment;
+}
+
+@mixin zeroMarginPadding {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin marginPadding($mar, $pad) {
+    margin: $mar;
+    padding: $pad;
+}
+
+@mixin canadaFontSizeWeight($fontSize, $fontWeight) {
+    font-family: canada-type-gibson, sans-serif;
+    font-style: normal;
+    font-weight: $fontWeight;
+    font-size: $fontSize;
+}
+
+@mixin gibsonFontSizeWeight($fontSize, $fontWeight) {
+    font-family: 'Gibson' !important;
+    font-style: normal;
+    font-weight: $fontWeight;
+    font-size: $fontSize;
+}
+
+// Makes things not selectable
+// Useful for text that you don't want to be able to be copied easily
+@mixin noSelection() {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+// Colors
+$darkPurple: #5540c7;
+$lightPurple: #909af8;
+$white: #ffffff;
+$lightRed: #f08778;
+$lightBlue: #5e9afc;
+$lightGreyA: #707070;
+$lightGreyB: #828282;

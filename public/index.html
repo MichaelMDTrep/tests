@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <div id="overlay"></div>
+
+    <!-- HTTPS Redirect -->
+        <script>
+            if(!window.location.href.toString().includes('localhost')) {
+                var loc = window.location.href+'';
+                if (loc.indexOf('http://')==0){
+                    window.location.href = loc.replace('http://','https://');
+                }
+            }
+        </script> 
+    <!-- End of HTTPS Redirect --> 
+    <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MMDLNJC');</script>
+    <!-- End Google Tag Manager -->
+        <meta charset="utf-8" />
+        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="description" content="Like playing Monopoly, but within the real world." />
+        <link href="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <title>SuperWorld - AR Real Estate</title>
+        <script src="https://script.tapfiliate.com/tapfiliate.js" type="text/javascript" async></script>
+        <script type="text/javascript">
+            (function(t,a,p){t.TapfiliateObject=a;t[a]=t[a]||function(){ (t[a].q=t[a].q||[]).push(arguments)}})(window,'tap');
+
+            tap('create', '19540-036108', { integration: "javascript" });
+            tap('detect');
+            window.tapfiliate = tap;
+        </script>
+    </head>
+    <body>
+    <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MMDLNJC"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+    </body>
+</html>

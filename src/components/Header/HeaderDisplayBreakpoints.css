@@ -1,0 +1,70 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* Arrow for Show $ hide toolbar */
+    .ArrowShowToolbar {
+        display: inline-block;
+    }
+
+    .ArrowHideToolbar {
+        margin-top: 184px;
+        z-index: 7;
+        display: inline-block;
+    }
+
+    .MuiGrid-container {
+        flex-wrap: wrap !important;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /* Arrow for Show $ hide toolbar */
+    .ArrowShowToolbar {
+        display: inline-block;
+    }
+
+    .ArrowHideToolbar {
+        margin-top: 64px;
+        display: inline-block;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* Arrow for Show $ hide toolbar */
+    .ArrowShowToolbar {
+        display: inline-block;
+    }
+
+    .ArrowHideToolbar {
+        margin-top: 63px;
+        display: inline-block;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /* Arrow for Show $ hide toolbar */
+    .ArrowShowToolbar {
+        display: inline-block;
+    }
+
+    .ArrowHideToolbar {
+        margin-top: 63px;
+        display: inline-block;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /* Arrow for Show $ hide toolbar */
+    .ArrowShowToolbar {
+        display: inline-block;
+    }
+
+    .ArrowHideToolbar {
+        /* z-index: 3; */
+        margin-top: 64px;
+        display: inline-block;
+    }
+}

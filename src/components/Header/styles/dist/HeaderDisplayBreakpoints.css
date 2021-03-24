@@ -1,0 +1,925 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* Arrow for Show $ hide toolbar */
+  .ArrowShowToolbar {
+    display: inline-block;
+  }
+
+  .ArrowHideToolbar {
+    /* margin-top: 10px; */
+    margin-top: 64px;
+    display: inline-block;
+    z-index: 7;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* Arrow for Show $ hide toolbar */
+  .ArrowShowToolbar {
+    display: inline-block;
+  }
+
+  .ArrowHideToolbar {
+    margin-top: 64px;
+    display: inline-block;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* Arrow for Show $ hide toolbar */
+  .ArrowShowToolbar {
+    display: inline-block;
+  }
+
+  .ArrowHideToolbar {
+    margin-top: 63px;
+    display: inline-block;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* Arrow for Show $ hide toolbar */
+  .ArrowShowToolbar {
+    display: inline-block;
+  }
+
+  .ArrowHideToolbar {
+    margin-top: 63px;
+    display: inline-block;
+  }
+}
+@media not all and (min-width: 700px) {
+  .ethPrice,
+.green-percent {
+    display: none;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* Arrow for Show $ hide toolbar */
+  .ArrowShowToolbar {
+    display: inline-block;
+  }
+
+  .ArrowHideToolbar {
+    /* z-index: 3; */
+    margin-top: 64px;
+    display: inline-block;
+  }
+}
+/* ----------- Mobile & Tablet responsive desing ----------- */
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+/* Portrait and Landscape */
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+  .toolbar {
+    width: 100% !important;
+    z-index: 1;
+  }
+
+  .log-out-dropdown {
+    width: 65px !important;
+    height: 40px !important;
+  }
+
+  .log-out-dropdown-position {
+    /* left: 290px !important; */
+  }
+
+  .log-out-dropdown p {
+    text-align-last: center;
+    font-size: 12px !important;
+  }
+
+  .details-tooltap {
+    width: 100% !important;
+    z-index: 0;
+  }
+
+  .MuiGrid-root.MuiGrid-item {
+    padding: 5px !important;
+  }
+
+  .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2.MuiGrid-align-items-xs-center.MuiGrid-justify-xs-flex-end {
+    margin: 0;
+  }
+
+  .MuiToolbar-regular {
+    min-height: auto !important;
+  }
+
+  .MuiButton-root {
+    padding: 5px 10px !important;
+  }
+
+  .TextField-without-border-radius {
+    width: 220px !important;
+  }
+
+  .MuiButtonBase-root.MuiButton-root.MuiButton-text.wallet-button,
+.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-edgeEnd,
+.notification-button {
+    display: none;
+    margin: 0px;
+  }
+
+  .MuiPaper-root.MuiAppBar-root.MuiAppBar-positionStatic.MuiAppBar-colorPrimary.MuiPaper-elevation4 {
+    background-color: white !important;
+    width: 100% !important;
+  }
+
+  .MuiGrid-root.dropdowns.MuiGrid-container.MuiGrid-spacing-xs-5.MuiGrid-align-items-xs-center.MuiGrid-grid-xs-12 {
+    margin: 3px;
+    justify-content: center;
+    /* margin-left: 10px; */
+  }
+
+  .myPropsMenu,
+.forSaleMenu,
+.myWishlistMenu,
+p {
+    font-size: 10px !important;
+    line-height: 1.2 !important;
+    inline-size: max-content;
+  }
+
+  .myPropsMenu,
+.forSaleMenu,
+.myWishlistMenu {
+    width: 50px !important;
+  }
+
+  .ethPrice,
+.green-percent {
+    display: none;
+  }
+
+  /* Arrow for Show $ hide toolbar */
+  .ArrowShowToolbar {
+    display: inline-block;
+  }
+
+  .Btn-ArrowHideToolbar {
+    height: 85px !important;
+  }
+
+  .ArrowHideToolbar {
+    margin-top: 55px;
+    z-index: 7;
+    display: inline-block;
+  }
+
+  #deckgl-wrapper {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .toolbar {
+    width: 100% !important;
+    z-index: 1;
+  }
+
+  .log-out-dropdown {
+    width: 65px !important;
+    height: 40px !important;
+  }
+
+  .log-out-dropdown-position {
+    /* left: 240px !important; */
+  }
+
+  .log-out-dropdown p {
+    text-align-last: center;
+    font-size: 12px !important;
+  }
+
+  .details-tooltap {
+    width: 100% !important;
+    z-index: 0;
+  }
+
+  .MuiGrid-root.MuiGrid-item {
+    padding: 5px !important;
+  }
+
+  .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2.MuiGrid-align-items-xs-center.MuiGrid-justify-xs-flex-end {
+    margin: 0;
+  }
+
+  .MuiToolbar-regular {
+    min-height: auto !important;
+  }
+
+  .MuiButton-root {
+    padding: 5px 10px !important;
+  }
+
+  .TextField-without-border-radius {
+    width: 160px !important;
+  }
+
+  .MuiButtonBase-root.MuiButton-root.MuiButton-text.wallet-button,
+.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-edgeEnd,
+.notification-button {
+    display: none;
+    margin: 0px;
+  }
+
+  .MuiPaper-root.MuiAppBar-root.MuiAppBar-positionStatic.MuiAppBar-colorPrimary.MuiPaper-elevation4 {
+    background-color: white !important;
+    width: 100% !important;
+  }
+
+  .MuiGrid-root.dropdowns.MuiGrid-container.MuiGrid-spacing-xs-5.MuiGrid-align-items-xs-center.MuiGrid-grid-xs-12 {
+    margin: 3px;
+    justify-content: center;
+    /* margin-left: 10px; */
+  }
+
+  .forSaleMenu,
+.myWishlistMenu,
+p {
+    font-size: 9px !important;
+    line-height: 1.2 !important;
+    inline-size: max-content;
+  }
+
+  .myPropsMenu p {
+    font-size: 7px !important;
+    inline-size: max-content;
+  }
+
+  .myPropsMenu,
+.forSaleMenu,
+.myWishlistMenu {
+    width: 90px !important;
+  }
+
+  .ethPrice,
+.green-percent {
+    display: none;
+  }
+
+  /* Arrow for Show $ hide toolbar */
+  .ArrowShowToolbar {
+    display: inline-block;
+  }
+
+  .Btn-ArrowHideToolbar {
+    height: 85px !important;
+  }
+
+  .ArrowHideToolbar {
+    margin-top: 55px;
+    z-index: 7;
+    display: inline-block;
+  }
+
+  #deckgl-wrapper {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .toolbar {
+    width: 100% !important;
+    z-index: 1;
+  }
+
+  .log-out-dropdown {
+    width: 65px !important;
+    height: 40px !important;
+  }
+
+  .log-out-dropdown-position {
+    /* left: 290px !important; */
+  }
+
+  .log-out-dropdown p {
+    text-align-last: center;
+    font-size: 12px !important;
+  }
+
+  .details-tooltap {
+    width: 100% !important;
+    z-index: 0;
+  }
+
+  .MuiGrid-root.MuiGrid-item {
+    padding: 5px !important;
+  }
+
+  .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2.MuiGrid-align-items-xs-center.MuiGrid-justify-xs-flex-end {
+    margin: 0;
+  }
+
+  .MuiToolbar-regular {
+    min-height: auto !important;
+  }
+
+  .MuiButton-root {
+    padding: 5px 10px !important;
+  }
+
+  .TextField-without-border-radius {
+    width: 220px !important;
+  }
+
+  .MuiButtonBase-root.MuiButton-root.MuiButton-text.wallet-button,
+.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-edgeEnd,
+.notification-button {
+    display: none;
+    margin: 0px;
+  }
+
+  .MuiPaper-root.MuiAppBar-root.MuiAppBar-positionStatic.MuiAppBar-colorPrimary.MuiPaper-elevation4 {
+    background-color: white !important;
+    width: 100% !important;
+  }
+
+  .MuiGrid-root.dropdowns.MuiGrid-container.MuiGrid-spacing-xs-5.MuiGrid-align-items-xs-center.MuiGrid-grid-xs-12 {
+    margin: 3px;
+    justify-content: center;
+    /* margin-left: 10px; */
+  }
+
+  .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2 {
+    width: calc(20% + 16px);
+  }
+
+  .forSaleMenu,
+.myWishlistMenu,
+p {
+    font-size: 10px !important;
+    line-height: 1.2 !important;
+    inline-size: max-content;
+  }
+
+  .myPropsMenu p {
+    font-size: 9px !important;
+    inline-size: max-content;
+  }
+
+  .myPropsMenu,
+.forSaleMenu,
+.myWishlistMenu {
+    width: 110px !important;
+  }
+
+  .ethPrice,
+.green-percent {
+    display: none;
+  }
+
+  /* Arrow for Show $ hide toolbar */
+  .ArrowShowToolbar {
+    display: inline-block;
+  }
+
+  .Btn-ArrowHideToolbar {
+    height: 85px !important;
+  }
+
+  .ArrowHideToolbar {
+    margin-top: 55px;
+    z-index: 7;
+    display: inline-block;
+  }
+
+  #deckgl-wrapper {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  .toolbar {
+    width: 100% !important;
+    z-index: 1;
+  }
+
+  .log-out-dropdown {
+    width: 65px !important;
+    height: 40px !important;
+  }
+
+  .log-out-dropdown-position {
+    /* left: 290px !important; */
+  }
+
+  .log-out-dropdown p {
+    text-align-last: center;
+    font-size: 12px !important;
+  }
+
+  .details-tooltap {
+    width: 100% !important;
+    z-index: 0;
+  }
+
+  .MuiGrid-root.MuiGrid-item {
+    padding: 5px !important;
+  }
+
+  .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2.MuiGrid-align-items-xs-center.MuiGrid-justify-xs-flex-end {
+    margin: 0;
+  }
+
+  .MuiToolbar-regular {
+    min-height: auto !important;
+  }
+
+  .MuiButton-root {
+    padding: 5px 10px !important;
+  }
+
+  .TextField-without-border-radius {
+    width: 230px !important;
+  }
+
+  .MuiButtonBase-root.MuiButton-root.MuiButton-text.wallet-button,
+.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-edgeEnd,
+.notification-button {
+    display: none;
+    margin: 0px;
+  }
+
+  .MuiPaper-root.MuiAppBar-root.MuiAppBar-positionStatic.MuiAppBar-colorPrimary.MuiPaper-elevation4 {
+    background-color: white !important;
+    width: 100% !important;
+  }
+
+  .MuiGrid-root.dropdowns.MuiGrid-container.MuiGrid-spacing-xs-5.MuiGrid-align-items-xs-center.MuiGrid-grid-xs-12 {
+    margin: 3px;
+    justify-content: center;
+    /* margin-left: 30px; */
+  }
+
+  .myPropsMenu,
+.forSaleMenu,
+.myWishlistMenu,
+p {
+    font-size: 10px !important;
+    line-height: 1.2 !important;
+    inline-size: max-content;
+  }
+
+  .myPropsMenu,
+.forSaleMenu,
+.myWishlistMenu {
+    width: 120px !important;
+  }
+
+  .ethPrice,
+.green-percent {
+    display: none;
+  }
+
+  /* Arrow for Show $ hide toolbar */
+  .ArrowShowToolbar {
+    display: inline-block;
+  }
+
+  .Btn-ArrowHideToolbar {
+    height: 85px !important;
+  }
+
+  .ArrowHideToolbar {
+    margin-top: 55px;
+    z-index: 7;
+    display: inline-block;
+  }
+
+  #deckgl-wrapper {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+/* ----------- iPhone X ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .toolbar {
+    width: 100% !important;
+    z-index: 1;
+  }
+
+  .log-out-dropdown {
+    width: 65px !important;
+    height: 40px !important;
+  }
+
+  .log-out-dropdown-position {
+    /* left: 290px !important; */
+  }
+
+  .log-out-dropdown p {
+    text-align-last: center;
+    font-size: 12px !important;
+  }
+
+  .details-tooltap {
+    width: 100% !important;
+    z-index: 0;
+  }
+
+  .MuiGrid-root.MuiGrid-item {
+    padding: 5px !important;
+  }
+
+  .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2.MuiGrid-align-items-xs-center.MuiGrid-justify-xs-flex-end {
+    margin: 0;
+  }
+
+  .MuiToolbar-regular {
+    min-height: auto !important;
+  }
+
+  .MuiButton-root {
+    padding: 5px 10px !important;
+  }
+
+  .TextField-without-border-radius {
+    width: 220px !important;
+  }
+
+  .MuiButtonBase-root.MuiButton-root.MuiButton-text.wallet-button,
+.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-edgeEnd,
+.notification-button {
+    display: none;
+    margin: 0px;
+  }
+
+  .MuiPaper-root.MuiAppBar-root.MuiAppBar-positionStatic.MuiAppBar-colorPrimary.MuiPaper-elevation4 {
+    background-color: white !important;
+    width: 100% !important;
+  }
+
+  .MuiGrid-root.dropdowns.MuiGrid-container.MuiGrid-spacing-xs-5.MuiGrid-align-items-xs-center.MuiGrid-grid-xs-12 {
+    margin: 3px;
+    justify-content: center;
+    /* margin-left: 10px; */
+  }
+
+  .myPropsMenu,
+.forSaleMenu,
+.myWishlistMenu,
+p {
+    font-size: 10px !important;
+    line-height: 1.2 !important;
+    inline-size: max-content;
+  }
+
+  .myPropsMenu,
+.forSaleMenu,
+.myWishlistMenu {
+    width: 110px !important;
+  }
+
+  .ethPrice,
+.green-percent {
+    display: none;
+  }
+
+  /* Arrow for Show $ hide toolbar */
+  .ArrowShowToolbar {
+    display: inline-block;
+  }
+
+  .Btn-ArrowHideToolbar {
+    height: 85px !important;
+  }
+
+  .ArrowHideToolbar {
+    margin-top: 55px;
+    z-index: 7;
+    display: inline-block;
+  }
+
+  #deckgl-wrapper {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .toolbar {
+    width: 100% !important;
+    z-index: 1;
+  }
+
+  .log-out-dropdown {
+    width: 65px !important;
+    height: 40px !important;
+  }
+
+  .log-out-dropdown-position {
+    /* left: 290px !important; */
+  }
+
+  .log-out-dropdown p {
+    text-align-last: center;
+    font-size: 12px !important;
+  }
+
+  .details-tooltap {
+    width: 100% !important;
+    z-index: 0;
+  }
+
+  .MuiGrid-root.MuiGrid-item {
+    padding: 5px !important;
+  }
+
+  .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2.MuiGrid-align-items-xs-center.MuiGrid-justify-xs-flex-end {
+    margin: 0;
+  }
+
+  .MuiToolbar-regular {
+    min-height: auto !important;
+  }
+
+  .MuiButton-root {
+    padding: 5px 10px !important;
+  }
+
+  .TextField-without-border-radius {
+    width: 280px !important;
+  }
+
+  .MuiButtonBase-root.MuiButton-root.MuiButton-text.wallet-button,
+.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-edgeEnd,
+.notification-button {
+    /* display: none; */
+    margin: 3px;
+  }
+
+  .MuiPaper-root.MuiAppBar-root.MuiAppBar-positionStatic.MuiAppBar-colorPrimary.MuiPaper-elevation4 {
+    background-color: white !important;
+    width: 100% !important;
+  }
+
+  .MuiGrid-root.dropdowns.MuiGrid-container.MuiGrid-spacing-xs-5.MuiGrid-align-items-xs-center.MuiGrid-grid-xs-12 {
+    margin: 5px;
+    justify-content: center;
+    /* margin-left: 10px; */
+  }
+
+  .myPropsMenu,
+.forSaleMenu,
+.myWishlistMenu,
+p {
+    font-size: 13px !important;
+    line-height: 1.2 !important;
+    inline-size: max-content;
+  }
+
+  .myPropsMenu,
+.forSaleMenu,
+.myWishlistMenu {
+    width: 195px !important;
+    margin: 5px !important;
+  }
+
+  .ethPrice,
+.green-percent {
+    font-size: 9px !important;
+  }
+
+  /* Arrow for Show $ hide toolbar */
+  .ArrowShowToolbar {
+    display: inline-block;
+  }
+
+  .Btn-ArrowHideToolbar {
+    height: 100px !important;
+  }
+
+  .ArrowHideToolbar {
+    margin-top: 65px;
+    z-index: 7;
+    display: inline-block;
+  }
+
+  #deckgl-wrapper {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+/* ----------- iPad Pro 10.5" ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
+  .toolbar {
+    width: 100% !important;
+    z-index: 1;
+  }
+
+  .log-out-dropdown {
+    width: 65px !important;
+    height: 40px !important;
+  }
+
+  .log-out-dropdown-position {
+    /* left: 290px !important; */
+  }
+
+  .log-out-dropdown p {
+    text-align-last: center;
+    font-size: 12px !important;
+  }
+
+  .details-tooltap {
+    width: 100% !important;
+    z-index: 0;
+  }
+
+  .MuiGrid-root.MuiGrid-item {
+    padding: 5px !important;
+  }
+
+  .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2.MuiGrid-align-items-xs-center.MuiGrid-justify-xs-flex-end {
+    margin: 0;
+  }
+
+  .MuiToolbar-regular {
+    min-height: auto !important;
+  }
+
+  .MuiButton-root {
+    padding: 5px 10px !important;
+  }
+
+  .TextField-without-border-radius {
+    width: 280px !important;
+  }
+
+  .MuiButtonBase-root.MuiButton-root.MuiButton-text.wallet-button,
+.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-edgeEnd,
+.notification-button {
+    /* display: none; */
+    margin: 3px;
+  }
+
+  .MuiPaper-root.MuiAppBar-root.MuiAppBar-positionStatic.MuiAppBar-colorPrimary.MuiPaper-elevation4 {
+    background-color: white !important;
+    width: 100% !important;
+  }
+
+  .MuiGrid-root.dropdowns.MuiGrid-container.MuiGrid-spacing-xs-5.MuiGrid-align-items-xs-center.MuiGrid-grid-xs-12 {
+    margin: 5px;
+    justify-content: center;
+    /* margin-left: 10px; */
+  }
+
+  .myPropsMenu,
+.forSaleMenu,
+.myWishlistMenu,
+p {
+    font-size: 13px !important;
+    line-height: 1.2 !important;
+    inline-size: max-content;
+  }
+
+  .myPropsMenu,
+.forSaleMenu,
+.myWishlistMenu {
+    width: 195px !important;
+    margin: 5px !important;
+  }
+
+  .ethPrice,
+.green-percent {
+    font-size: 12px !important;
+  }
+
+  /* Arrow for Show $ hide toolbar */
+  .ArrowShowToolbar {
+    display: inline-block;
+  }
+
+  .Btn-ArrowHideToolbar {
+    height: 100px !important;
+  }
+
+  .ArrowHideToolbar {
+    margin-top: 65px;
+    z-index: 7;
+    display: inline-block;
+  }
+
+  #deckgl-wrapper {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+/* ----------- iPad Pro 12.9" ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .toolbar {
+    width: 100% !important;
+    z-index: 1;
+  }
+
+  .log-out-dropdown {
+    width: 65px !important;
+    height: 40px !important;
+  }
+
+  .log-out-dropdown-position {
+    /* left: 290px !important; */
+  }
+
+  .log-out-dropdown p {
+    text-align-last: center;
+    font-size: 12px !important;
+  }
+
+  .details-tooltap {
+    width: 100% !important;
+    z-index: 0;
+  }
+
+  .MuiGrid-root.MuiGrid-item {
+    padding: 5px !important;
+  }
+
+  .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2.MuiGrid-align-items-xs-center.MuiGrid-justify-xs-flex-end {
+    margin: 0;
+  }
+
+  .MuiToolbar-regular {
+    min-height: auto !important;
+  }
+
+  .MuiButton-root {
+    padding: 5px 10px !important;
+  }
+
+  .TextField-without-border-radius {
+    width: 280px !important;
+  }
+
+  .MuiButtonBase-root.MuiButton-root.MuiButton-text.wallet-button,
+.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-edgeEnd,
+.notification-button {
+    /* display: none; */
+    margin: 3px;
+  }
+
+  .MuiPaper-root.MuiAppBar-root.MuiAppBar-positionStatic.MuiAppBar-colorPrimary.MuiPaper-elevation4 {
+    background-color: white !important;
+    width: 100% !important;
+  }
+
+  .MuiGrid-root.dropdowns.MuiGrid-container.MuiGrid-spacing-xs-5.MuiGrid-align-items-xs-center.MuiGrid-grid-xs-12 {
+    margin: 5px;
+    justify-content: center;
+    /* margin-left: 10px; */
+  }
+
+  .myPropsMenu,
+.forSaleMenu,
+.myWishlistMenu,
+p {
+    font-size: 14px !important;
+    line-height: 1.2 !important;
+    inline-size: max-content;
+  }
+
+  .myPropsMenu,
+.forSaleMenu,
+.myWishlistMenu {
+    width: 220px !important;
+    margin: 5px !important;
+  }
+
+  .ethPrice,
+.green-percent {
+    font-size: 14px !important;
+  }
+
+  /* Arrow for Show $ hide toolbar */
+  .ArrowShowToolbar {
+    display: inline-block;
+  }
+
+  .Btn-ArrowHideToolbar {
+    height: 100px !important;
+  }
+
+  .ArrowHideToolbar {
+    margin-top: 65px;
+    z-index: 7;
+    display: inline-block;
+  }
+
+  #deckgl-wrapper {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}

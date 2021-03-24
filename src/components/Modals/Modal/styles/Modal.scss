@@ -1,0 +1,144 @@
+@import '../../../mixins/mixins.scss';
+
+.hidden {
+    display: none;
+}
+
+.modal__div {
+    width: 36vw;
+    border: 2px solid $lightPurple;
+    border-radius: 12px;
+    margin-top: 200px;
+    text-align: center;
+    background-color: white;
+    z-index: 1000;
+    transform: translate(32vw, -100vh);
+    position: fixed;
+    @include noSelection();
+}
+
+.modal__exit {
+    // position: absolute;
+    // top: 0%;
+    // right: 0%;
+    @include topRightAbsolute(0%, 0%);
+    transform: translate(0%, 0%);
+    background: transparent;
+    border-color: transparent;
+    color: $lightPurple;
+    font-size: 2rem;
+    outline: none;
+}
+.modal__exit:hover {
+    outline: transparent;
+    cursor: pointer;
+}
+
+.modal__header {
+    width: 100%;
+    padding-top: 1rem;
+    color: black;
+    margin-top: 20px;
+}
+
+.modal__header h2 {
+    // font-family: canada-type-gibson, sans-serif;
+    // font-style: normal;
+    // font-size: 24px;
+    // font-weight: 900;
+    @include canadaFontSizeWeight(24px, 900);
+}
+
+.modal__content {
+    width: 50%;
+    font-size: 16px;
+    color: $lightGreyB;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal__footer {
+    padding: 1.5rem 0.5rem;
+    // display: flex;
+    // flex-direction: column;
+    @include flexDirJusAli(column, initial, initial);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal__footer button {
+    margin: 0.5em auto;
+    width: 37%;
+    padding: 1%;
+    color: white;
+    background-color: $darkPurple;
+    border: $darkPurple;
+    // font-family: canada-type-gibson, sans-serif;
+    // font-style: normal;
+    // font-size: 13px;
+    // font-size: 100%;
+    // font-weight: 600;
+    @include canadaFontSizeWeight(13px, 600);
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    @include flexDirJusAli(column, center, center);
+    outline: transparent;
+    border-radius: 2em;
+}
+
+.modal__footer button:hover {
+    background-color: $lightPurple;
+    border: $lightPurple;
+    cursor: pointer;
+}
+
+.modal-enter {
+    transform: translateY(-10rem);
+    opacity: 0;
+}
+
+.modal-enter-active {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 200ms;
+}
+
+.modal-exit {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.modal-exit-active {
+    transform: translateY(-10rem);
+    opacity: 0;
+    transition: all 200ms;
+}
+
+// @media (max-width: 769px) {
+//     .modal__div {
+//         width: 80vw;
+//         transform: translate(10vw, -100vh);
+//     }
+// }
+
+@media (max-width: 426px) {
+    .modal__div {
+        width: 80vw;
+        transform: translate(10vw, -120vh);
+    }
+}
+
+@media (max-width: 321px) {
+    .modal__div {
+        width: 90vw;
+        transform: translate(5vw, -120vh);
+    }
+}
+// @media (max-width: 550px) {
+//     .modal__div {
+//         width: 80vw;
+//         transform: translate(10vw, -120vh);
+//     }
+// }

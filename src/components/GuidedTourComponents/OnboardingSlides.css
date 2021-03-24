@@ -1,0 +1,382 @@
+.hidden {
+    display: none;
+}
+.card{
+    position :relative;
+}
+
+/* Can change this later for the "arrow nub" */
+.__floater__arrow {
+    display: none;
+}
+
+.sw-logo{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 2%;
+    left: 1.6%;
+}
+.skip-Btn{
+    position: absolute;
+    z-index: 3000;
+    top: 20px;
+    right: 35px;
+    border: 0;
+    background-color: transparent;
+    color: #5540C7;
+    font-family: canada-type-gibson, sans-serif;
+    font-style: normal;
+    font-size: 115%;
+}
+.skip-Btn:hover{
+    opacity: .7;
+}
+.skip-Btn:focus{
+    outline: 0px
+}
+.skip-Btn:focus{
+    border: 0;
+}
+.slide-illustration{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+h3, p{
+    color: black;
+}
+.slide-info{
+    position: relative;
+    width: 80%;
+    left: 7%;
+    top: 25%;
+}
+
+.slide-info button{
+    float: right;
+}
+.slide-title{
+    text-transform: uppercase;
+    line-height: 3.0rem;
+   /* padding-bottom: 10px;*/
+    font-size: 40px;
+    width: 50%;
+    margin-right: 10px;
+    font-family: canada-type-gibson, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 10%;
+    margin-bottom: 0;
+}
+.slide-description{
+    width: 31%;
+    line-height: 2rem;
+    padding: 3px 0;
+    font-size: 20px;
+    font-family: canada-type-gibson, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    text-align: left;  
+    text-align: initial;
+    padding-top: 0;
+}
+
+.button-section{
+    position: absolute;
+    bottom: 4%;
+    right: 4%;
+}
+.button-section button{
+    margin: 0 10px;
+    border-radius: 2em;
+    font-weight: bold;
+    padding: .375rem 1.5rem;
+    border: 2px solid #5540C7;
+    text-transform: uppercase;
+}
+.button-section button:focus{
+    outline-offset: 0px;
+    outline: 0px;
+}
+.start-section{
+    position: absolute;
+    opacity: .9;
+    margin: 0 1px;
+    border-radius: 2em;
+    font-family: canada-type-gibson, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100%;
+    padding: .375rem 1.5rem;
+    border: 2px solid #5540C7;
+    text-transform: uppercase;
+    background-color: #5540C7;
+    color: white;
+    
+}
+.start-section:hover, .next-btn:focus{
+    background-color:#909afb;; 
+    border: 2px solid white;
+}
+.start-btn{
+    margin: 0 10px;
+    border-radius: 2em;
+    font-weight: bold;
+    padding: .375rem 1.5rem;
+    border: 2px solid #5540C7;
+    text-transform: uppercase;
+}
+
+.start-section, .next-btn:focus{
+    outline-offset: 0px;
+    outline: 0px;
+}
+.inverted-y-direction{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.cryptoiscool4-img{
+    max-width: 70%;
+    max-height: 70%;
+    height: auto;
+}
+.cryptoiscool2-img{
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: cover;
+}
+.cryptoiscool3-img{
+    bottom: 12%;
+    height: 80%; 
+    right: 10%;
+    width: auto;
+   /* max-height: 65%;*/
+
+}
+.cryptoiscool1-img{
+    max-height: 65%;
+    max-width: 70%;
+
+}
+.cryptoiscool0-img {
+    width: 60vw;
+    height: 90%;
+    object-fit: cover;
+}
+/* title for first slide*/
+.style1{
+    text-transform: uppercase;
+    /*padding-bottom: 10px;*/
+    font-size: 55px;
+    width: 50%;
+    line-height: 3.5rem;
+    font-family: canada-type-gibson, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    text-align: left;
+    color: #5540C7;
+    margin-top: 10%;
+    margin-bottom: 0;
+}
+
+.Carousel-root-1 {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+.CarouselItem {
+    height: 70%;
+}
+
+.Carousel-indicator-3{
+    background-color: white;
+    border: 2px #5540C7 solid;
+    border-radius: 50%;
+    padding: 6px;
+    margin-right: 20px;
+    height: initial;
+    width: initial;
+    opacity: 1;
+    right: 10%;
+}
+.Carousel-indicators-2 {
+    text-align: left !important;
+    margin-left: 7%;
+}
+
+
+.Carousel-active-4 {
+    color: var(--dark-purple) !important;
+    background-color:#5540C7;
+}
+
+.Carousel-prev-12 {
+    left: auto !important; 
+    right: 50px;
+    bottom: 4%;
+}
+
+.Carousel-button-7{
+    top: 50%  !important;
+}
+.Carousel-next-11 {
+    right: 20px !important; 
+    bottom: 4%;
+}
+
+.Carousel-next-11 button{
+    visibility: hidden;
+    opacity: 1;
+    transform: translateY(40vh);
+    width: 10px;
+}
+
+.Carousel-prev-12 button {
+    visibility: hidden;
+    opacity: 1;
+    transform: translateY(40vh);
+}
+
+.Carousel-next-11 button::after {
+    visibility: visible;
+    background-color: var(--dark-purple);
+    border: 2px solid var(--dark-purple);
+    border-radius: 16px;
+    content: "NEXT";
+    font-family: canada-type-gibson, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    padding: 5px 20px;
+}
+
+.Carousel-next-11 button:hover::after {
+    background-color: var(--light-purple);
+    border: 2px solid var(--light-purple);
+}
+
+.Carousel-prev-12 button::after {
+    visibility: visible;
+    background-color: transparent;
+    border: 2px solid var(--dark-purple);
+    border-radius: 16px;
+    content: "PREVIOUS";
+    font-family: canada-type-gibson, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: var(--dark-purple);
+    padding: 5px 20px;
+}
+
+.Carousel-prev-12 button:hover::after {
+    background-color: white;
+    opacity: 0.9;
+}
+
+.done-Btn {
+    border: 2px solid var(--dark-purple);
+    background-color: var(--dark-purple);
+    color: white;
+    font-family: canada-type-gibson, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 16px;
+    position: absolute;
+    z-index: 3000;
+    bottom: 6.5vh;
+    right: 20px;
+    padding: 5px 20px;
+    
+}
+
+.done-Btn:hover {
+    border: 2px solid var(--light-purple);
+    background-color: var(--light-purple);
+}
+
+
+/* .Carousel-indicators li{
+    background-color: white;
+    padding: 7px;
+    margin-right: 20px;
+    height: initial;
+    width: initial;
+    opacity: 1;
+    right: 10%;
+    border-radius: 50%;
+    border: 2px #5540C7 solid;
+    
+}
+.carousel-indicators .active{
+    background-color:#5540C7;
+} */
+/* .move-left{
+    right: 20% !important;
+} */
+/*
+@media (max-width: 700px) {
+    .slide-description {
+        width: 90%;
+    }
+    .style1, .slide-title {
+        font-size: 150%;
+    }
+    .slide-description {
+        width: 90%;
+        line-height: 1rem;
+        padding: 3px 0;
+        font-size: 15px;
+        font-family: canada-type-gibson, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-align: left;
+    }
+    .carousel-indicators {
+        left: 0;
+        margin: 0;
+        top: 5%;
+        height: 7px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .slide-info {
+        width: 90%;
+    }  
+    .cryptoiscool1-img, .cryptoiscool2-img{
+        width: 110%;
+    }
+    .cryptoiscool4-img {
+        width: 80%;
+    }*/
+/*
+    .cryptoiscool3-img{
+        bottom: 12%;
+         height: 80%; 
+        right: 1%;
+         width: auto; 
+        max-height: 65%;
+        width: 70%;
+    
+    }
+    .btn-slide{
+        position:absolute;
+        bottom:4%;
+    }
+    .previous-btn {
+        left: 0;
+    }
+    .cryptoiscool0-img {
+        width: 80%;
+        height: 50%;
+        object-fit: cover;
+        left: 0%;
+        bottom: 15%;
+    }
+}*/

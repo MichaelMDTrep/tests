@@ -1,0 +1,8 @@
+.env
+.env.local
+.env.development
+node_modules
+.vscode
+build
+build.zip
+*.DS_Store

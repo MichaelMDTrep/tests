@@ -1,0 +1,143 @@
+GuidedTour.css :root {
+  --dark-purple: #5540c7;
+  --light-purple: #909af8;
+  --light-grey: #707070;
+}
+
+.hidden {
+  display: none;
+}
+
+.connect-success__textContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: initial;
+  -webkit-box-direction: initial;
+      -ms-flex-direction: initial;
+          flex-direction: initial;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+/* Can change this later for the "arrow nub" */
+.__floater__arrow {
+  display: none;
+}
+
+.connect-success__icon {
+  margin: 0px 0.25em;
+  color: #909af8;
+  height: 0;
+}
+
+.connect-success__text {
+  color: #707070;
+}
+
+.btn-primary {
+  border-radius: 25px;
+}
+
+.MuiMobileStepper-dot {
+  width: 10px !important;
+  height: 10px !important;
+  border: 1px solid #5540c7 !important;
+  background-color: white !important;
+}
+
+.MuiMobileStepper-dotActive {
+  background-color: #5540c7 !important;
+}
+
+.MuiMobileStepper-root {
+  padding: 1px !important;
+}
+
+.SatelliteView {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0 !important;
+  border-radius: 2rem !important;
+}
+
+.Istyle {
+  width: 180px;
+  height: 130px;
+  border-radius: auto;
+  margin: auto;
+  float: left;
+}
+
+.Istyle1 {
+  width: 180px;
+  height: 130px;
+  border-radius: auto;
+  float: right;
+}
+
+.popup {
+  width: 400px;
+  height: 300px;
+  background-color: white;
+  /* transform: translate(60vw, 30vh); */
+  /* border-radius: 0px !important;  */
+  /* border-radius: 0% !important; */
+  position: fixed;
+  margin-top: 20vh;
+  margin-left: 65vw;
+  z-index: 200;
+}
+
+.btext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: initial;
+  -webkit-box-direction: initial;
+      -ms-flex-direction: initial;
+          flex-direction: initial;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+  width: 100%;
+  font-family: canada-type-gibson, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 5px;
+  text-align: left;
+}
+
+.Istyle2 {
+  width: 35%;
+  height: auto;
+  padding-bottom: 0px;
+  float: right;
+  /* bottom: 20%; */
+}
+
+.pbtn {
+  position: absolute;
+  opacity: 0.9;
+  font-family: canada-type-gibson, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 0.375rem, 1.5rempx;
+  border: 2px solid #5540c7;
+  border-radius: 2em;
+  text-transform: uppercase;
+  background-color: #5540c7;
+  color: white;
+  margin-left: 65%;
+  margin-top: 1%;
+}
+/*# sourceMappingURL=GuidedTour.css.map */

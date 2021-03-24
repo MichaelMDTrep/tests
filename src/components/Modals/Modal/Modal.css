@@ -1,0 +1,121 @@
+:root {
+    --dark-purple: #5540c7;
+    --light-purple: #909af8;
+    --light-grey: #828282;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal__div {
+    width: 36vw;
+    border: 2px solid var(--light-purple);
+    border-radius: 12px;
+    margin-top: 200px;
+    text-align: center;
+    background-color: white;
+    z-index: 1000;
+    transform: translate(32vw, -100vh);
+    position: fixed;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.modal__exit {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    transform: translate(0%, 0%);
+    background: transparent;
+    border-color: transparent;
+    color: var(--light-purple);
+    font-size: 2rem;
+    outline: none;
+}
+.modal__exit:hover {
+    outline: transparent;
+    cursor: pointer;
+}
+
+.modal__header {
+    width: 100%;
+    padding-top: 1rem;
+    color: black;
+    margin-top: 20px;
+}
+
+.modal__header h2 {
+    font-family: canada-type-gibson, sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.modal__content {
+    width: 50%;
+    font-size: 16px;
+    color: var(--light-grey);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal__footer {
+    padding: 1.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal__footer button {
+    margin: 0.5em auto;
+    width: 37%;
+    padding: 1%;
+    color: white;
+    background-color: var(--dark-purple);
+    border: var(--dark-purple);
+    font-family: canada-type-gibson, sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    font-size: 100%;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: transparent;
+    border-radius: 2em;
+}
+
+.modal__footer button:hover {
+    background-color: var(--light-purple);
+    border: var(--light-purple);
+    cursor: pointer;
+}
+
+.modal-enter {
+    transform: translateY(-10rem);
+    opacity: 0;
+}
+
+.modal-enter-active {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 200ms;
+}
+
+.modal-exit {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.modal-exit-active {
+    transform: translateY(-10rem);
+    opacity: 0;
+    transition: all 200ms;
+}

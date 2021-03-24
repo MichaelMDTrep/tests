@@ -1,0 +1,464 @@
+/* .sc-bdVaJa {
+    width: 500px;
+    opacity: 0.75;
+    transition: 0.3s;
+}
+.zNoeh li {
+    width: 500px;
+    padding: 30px 20px !important;
+}
+.zNoeh {
+    opacity: 0.75;
+    transition: 0.3s;
+} */
+
+::-webkit-scrollbar {
+    width: 2px;
+    /* height: 400px; */
+}
+
+.search-result {
+    border-bottom: #d8d8d8 1px solid;
+    max-width: '480px';
+    margin-right: 40px !important;
+    max-height: '70px';
+}
+
+#long-menu {
+    position: relative;
+    /* z-index: 100; */
+}
+
+#props-menu {
+    position: relative;
+    z-index: 1 !important;
+}
+
+#prop-item {
+    position: relative;
+    z-index: 1 !important;
+}
+
+.search-result:hover {
+    color: #5540c7;
+}
+
+* {
+    scroll-behavior: smooth;
+    scroll-padding: 0px 5px;
+    scrollbar-width: none;
+    scrollbar-color: #c9c9c9 #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 2px;
+}
+
+::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.green-percent {
+    font-size: 15px;
+    margin-right: 10px;
+    color: rgb(1, 175, 10);
+}
+
+.red-percent {
+    margin-right: 10px;
+    font-size: 15px;
+    color: #f08779;
+}
+
+.red-arrow {
+    margin: 0px 5px;
+    height: 12px;
+}
+
+.green-arrow {
+    transform: rotate(180deg);
+    margin: 0px 5px;
+    height: 12px;
+}
+
+.wallet-button {
+    position: flex;
+    text-align: end;
+    color: #5a45c9 !important;
+    background-color: #ffffff !important;
+    font-family: 'Gibson' !important;
+    /* font-weight: bolder !important; */
+    border-radius: 50px !important;
+    margin: 0px 10px;
+    width: 200px;
+    border: 2px solid #5540c7 !important;
+    height: 35px;
+}
+
+.not-connected {
+    background-color: #5a45c9 !important;
+    color: #ffffff !important;
+    position: flex;
+    text-align: end;
+    font-family: 'Gibson' !important;
+    /* font-weight: bolder !important; */
+    border-radius: 50px !important;
+    margin: 0px 10px;
+    width: 200px;
+    border: 2px solid #5540c7 !important;
+    height: 35px;
+}
+
+.ethPrice {
+    font-size: 15px;
+    color: black;
+    padding: 10px;
+    font-family: 'Gibson';
+}
+
+.percentage {
+    color: black;
+    padding: 30px;
+    font-family: 'Gibson';
+}
+
+.LoginButton-header {
+    background: #5540c7 !important;
+    border-radius: 50px !important;
+    border: 2px solid #5540c7 !important;
+    color: #ffffff !important;
+    height: 40px !important;
+    padding: 0 35px !important;
+    font-family: 'Gibson' !important;
+    /* text-transform: 'capitalize' !important; */
+}
+
+.LoginButton-header:hover {
+    background: #ffffff !important;
+    color: #5540c7 !important;
+}
+
+.bottom-bar {
+    background-color: white !important;
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.14);
+}
+
+.LoginButton-header:disabled {
+    background: #ffffff !important;
+    border-radius: 50px !important;
+    border: 2px solid #b9b9b9 !important;
+    color: #b9b9b9 !important;
+    height: 40px !important;
+    /* padding: 0 90px !important; */
+    font-family: 'Gibson' !important;
+    /* text-transform: 'capitalize' !important; */
+}
+
+.TextField-without-border-radius fieldset {
+    border-radius: 100px;
+    height: 40px;
+    margin: auto;
+    border: none;
+    font-family: 'Gibson';
+    font-size: '13pt';
+    width: 480px;
+    height: 40px;
+}
+
+.TextField-without-border-radius {
+    -moz-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    -webkit-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+    background: #f5f5f5;
+    padding: 20px;
+}
+
+.TextField-without-border-radius:hover {
+    background-color: #e2e5ff !important;
+}
+
+.TextField-without-border-radius:focus-within > label {
+    display: none !important;
+}
+
+/* CSS for drop down menus on the toodlbar */
+/* changed forSaleMenu, myWishlistMenu & myPropsMenu from .test so I can change the hover color */
+
+.forSaleMenu {
+    /* position: relative; */
+    z-index: 100000000000000000 !important;
+    /* display: flex !important; */
+    color: #5a45c9 !important;
+    background-color: #ffffff !important;
+    /* padding: 3px 70px !important; */
+    box-shadow: #7e7e7e;
+    font-family: 'Gibson' !important;
+    font-weight: bolder !important;
+    border-radius: 50px !important;
+    border: 3px solid #5540c7 !important;
+    /* max-width: 300px; */
+    /* width: 300px; */
+    height: 35px;
+    max-height: 35px;
+}
+
+.forSaleMenu:disabled {
+    /* position: relative; */
+    z-index: 100000000000000000 !important;
+    /* display: flex !important; */
+    color: #b9b9b9 !important;
+    background-color: #ffffff !important;
+    /* padding: 3px 70px !important; */
+    box-shadow: #7e7e7e;
+    font-family: 'Gibson' !important;
+    font-weight: bolder !important;
+    border-radius: 50px !important;
+    border: 3px solid #b9b9b9 !important;
+    /* max-width: 300px; */
+    /* width: 300px; */
+    height: 35px;
+    max-height: 35px;
+}
+
+.forSaleMenu:hover {
+    /* background-color: rgba(0, 255, 0, .5) !important; */
+    /* color: #ffffff !important; */
+    box-shadow: #7e7e7e;
+    /* padding: 3px 70px !important; */
+    font-family: 'Gibson' !important;
+    font-weight: bolder !important;
+    /* border-radius: 50px !important; */
+    border: 3px solid rgba(0, 255, 0, 0.5) !important;
+}
+
+.myPropsMenu {
+    /* position: relative; */
+    z-index: 100000000000000000 !important;
+    /* display: flex !important; */
+    color: #5a45c9 !important;
+    background-color: #ffffff !important;
+    /* padding: 3px 70px !important; */
+    box-shadow: #7e7e7e;
+    font-family: 'Gibson' !important;
+    font-weight: bolder !important;
+    border-radius: 50px !important;
+    border: 3px solid #5540c7 !important;
+    /* max-width: 300px; */
+    /* width: 300px; */
+    height: 35px;
+    max-height: 35px;
+}
+
+.myPropsMenu:disabled {
+    /* position: relative; */
+    z-index: 100000000000000000 !important;
+    /* display: flex !important; */
+    color: #b9b9b9 !important;
+    background-color: #ffffff !important;
+    /* padding: 3px 70px !important; */
+    box-shadow: #7e7e7e;
+    font-family: 'Gibson' !important;
+    font-weight: bolder !important;
+    border-radius: 50px !important;
+    border: 3px solid #b9b9b9 !important;
+    /* max-width: 300px; */
+    /* width: 300px; */
+    height: 35px;
+    max-height: 35px;
+}
+
+.myPropsMenu:hover {
+    /* background-color: rgba(118, 167, 255, .5) !important; */
+    /* color: #ffffff !important; */
+    box-shadow: #7e7e7e;
+    /* padding: 3px 70px !important; */
+    font-family: 'Gibson' !important;
+    font-weight: bolder !important;
+    /* border-radius: 50px !important; */
+    border: 3px solid rgba(118, 167, 255, 0.5) !important;
+}
+
+.myWishlistMenu {
+    /* position: relative; */
+    z-index: 100000000000000000 !important;
+    /* display: flex !important; */
+    color: #5a45c9 !important;
+    background-color: #ffffff !important;
+    /* padding: 3px 70px !important; */
+    box-shadow: #7e7e7e;
+    font-family: 'Gibson' !important;
+    font-weight: bolder !important;
+    border-radius: 50px !important;
+    border: 3px solid #5540c7 !important;
+    /* max-width: 300px; */
+    /* width: 300px; */
+    height: 35px;
+    max-height: 35px;
+}
+
+.myWishlistMenu:disabled {
+    /* position: relative; */
+    z-index: 100000000000000000 !important;
+    /* display: flex !important; */
+    color: #b9b9b9 !important;
+    background-color: #ffffff !important;
+    /* padding: 3px 70px !important; */
+    box-shadow: #7e7e7e;
+    font-family: 'Gibson' !important;
+    font-weight: bolder !important;
+    border-radius: 50px !important;
+    border: 3px solid #b9b9b9 !important;
+    /* max-width: 300px; */
+    /* width: 300px; */
+    height: 35px;
+    max-height: 35px;
+}
+
+.myWishlistMenu:hover {
+    /* background-color: #9098ff !important; */
+    /* color: #ffffff !important; */
+    box-shadow: #7e7e7e;
+    /* padding: 3px 70px !important; */
+    font-family: 'Gibson' !important;
+    font-weight: bolder !important;
+    /* border-radius: 50px !important; */
+    border: 3px solid #9098ff !important;
+}
+
+.toolbar {
+    background-color: #ffffff !important;
+    /* z-index: 7; */
+}
+/* Grid for whole toolbar on top */
+.MuiGrid-container {
+    flex-wrap: nowrap !important;
+}
+/* Search input  */
+/* Grid for Wallet connect group */
+.MuiGrid-spacing-xs-2 {
+    margin-bottom: 0 !important;
+}
+
+/* FAQFAQTooltip text */
+
+.FAQTooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 2px dotted #5541c7;
+}
+
+.FAQTooltip .FAQTooltipText {
+    visibility: hidden;
+    width: 120px;
+    background-color: #8f98ff;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the FAQTooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -70px;
+}
+
+.FAQTooltip:hover .FAQTooltipText {
+    visibility: visible;
+}
+
+/* Arrow for Show $ hide toolbar */
+
+.Arrow-hide-tap {
+    z-index: 10000000000000;
+    text-align: center;
+}
+
+.details-tooltap,
+.show-tooltap,
+.hide-tooltap:target {
+    display: none;
+    position: absolute;
+    /* z-index: auto; */
+    width: 100%;
+    left: 0px;
+    top: 64px;
+}
+
+.hide-tooltap:target + .show-tooltap,
+.hide-tooltap:target ~ .details-tooltap {
+    display: block;
+}
+
+.referral {
+    font-size: 11px;
+}
+
+.myReferralsMenu {
+    z-index: 100000000000000000 !important;
+    color: #5a45c9 !important;
+    background-color: #ffffff !important;
+    box-shadow: #7e7e7e;
+    font-family: 'Gibson' !important;
+    font-weight: bolder !important;
+    border-radius: 50px !important;
+    border: 3px solid #5540c7 !important;
+    height: 35px;
+    max-height: 35px;
+}
+
+.btn-facebook {
+    background-image: url(https://d2b5i3lf2aafkr.cloudfront.net/images/social_icons.png);
+    background-position: -185px 0px;
+    background-size: 360px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    color: transparent;
+}
+
+.btn-twitter {
+    background-image: url(https://d2b5i3lf2aafkr.cloudfront.net/images/social_icons.png);
+    background-position: -150px 0px;
+    background-size: 360px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    color: transparent;
+}
+
+.btn-linkedin {
+    background-image: url(https://d2b5i3lf2aafkr.cloudfront.net/images/social_icons.png);
+    background-position: 0px -37px;
+    background-size: 360px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    color: transparent;
+}
+
+.btn-email {
+    background-image: url(https://d2b5i3lf2aafkr.cloudfront.net/images/social_icons.png);
+    background-position: 1px -227px;
+    background-size: 360px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    color: transparent;
+}
+
+.btn-hover:hover {
+    filter: opacity(.3);
+}

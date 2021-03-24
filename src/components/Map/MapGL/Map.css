@@ -1,0 +1,433 @@
+.Map {
+    z-index: 0 !important;
+}
+
+.NavControls {
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    background-color: #5540c7 !important;
+    border-radius: 100px;
+    width: 34px;
+}
+
+.location {
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    background-color: white !important;
+    margin-bottom: 5px !important;
+    padding: 8px !important;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+    /* margin-left: 10px !important; */
+    z-index: 1;
+}
+
+.open-popup {
+    max-width: 500px !important;
+    min-width: 470px !important;
+    height: auto !important;
+    /* color: #5540c7; */
+    /* background-color: white !important; */
+    /* border: 2px solid #5540c7 !important; */
+}
+
+.arrow {
+    position: absolute;
+    font-size: 7;
+    width: '3em';
+    height: '3em';
+}
+
+.arrow::before {
+    content: '';
+    margin: auto;
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.progress {
+    color: #5540c7 !important;
+    position: absolute !important;
+    /* float: right; */
+    right: 100px !important;
+    top: 3;
+    z-index: 1 !important;
+}
+
+.open-popup-notAvailable {
+    min-width: 400px !important;
+    height: auto !important;
+    background-color: transparent !important;
+    border: 2px solid rgba(200, 200, 200, 100) !important;
+}
+.open-popup-forSale {
+    min-width: 400px !important;
+    height: auto !important;
+    background-color: transparent !important;
+    border: 2px solid rgba(0, 255, 0, 100) !important;
+}
+
+.open-popup-owned {
+    min-width: 400px !important;
+    height: auto !important;
+    background-color: transparent !important;
+    /* [236, 80, 23, 145]  ORANGE */
+    /* [0, 255, 0, 30]  GREEN */
+    /* [200,200,200,90] */
+    border: 2px solid rgba(118, 167, 255, 255) !important;
+}
+
+.mapboxgl-popup-content {
+    position: relative !important;
+    /* background: #fff; */
+    border-radius: 3px !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 0 0 0 !important;
+    pointer-events: auto;
+}
+
+.hidden-popup {
+    /* visibility: hidden !important; */
+    display: none !important;
+    background-color: transparent !important;
+}
+
+.ETHLabel {
+    position: relative;
+}
+.ETHLabel span {
+    position: absolute;
+    right: 20px;
+}
+
+.plus-minus {
+    color: white !important;
+}
+
+.MapView {
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    position: absolute;
+    bottom: 75;
+    left: 75;
+    z-index: 1;
+    border-radius: 1px !important;
+    width: 120px;
+    height: 110px;
+    background-image: url('../../../assets/svg/map.png');
+    /* background-image: image('../../../assets/svg/map.png'); */
+}
+
+.SatelliteView {
+    -moz-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    position: absolute;
+    bottom: 75;
+    left: 75;
+    z-index: 1;
+    border-radius: 1px !important;
+
+    width: 120px;
+    height: 110px;
+    background-image: url('../../../assets/svg/satellite.png');
+    /* background-image: image('../../../assets/svg/map.png'); */
+}
+
+.SatelliteView:hover {
+    background-image: url('../../../assets/svg/satellite\ hover.png');
+}
+
+.MapView:hover {
+    background-image: url('../../../assets/svg/map\ hover.png');
+}
+
+.NavControls:hover {
+    background-color: #9098ff !important;
+}
+
+.location:hover {
+    background-color: #e0e0e0 !important;
+}
+
+.plus-minus:hover {
+    color: white !important;
+}
+
+.NavigationCtrl {
+    border-radius: 100px !important;
+    padding: 5px !important;
+}
+
+.mapboxgl-ctrl-icon {
+    fill: white !important;
+    border-radius: 100px !important;
+}
+
+.mapboxgl-ctrl-group button + button {
+    color: #5540c7;
+    border-top: 0px solid transparent !important;
+}
+
+.mapboxgl-ctrl button.mapboxgl-ctrl-zoom-in .mapboxgl-ctrl-icon {
+    color: #5540c7;
+}
+
+.tickerContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 2rem;
+    box-sizing: content-box;
+    z-index: 10; 
+}
+.ticker-wrap {
+    position: absolute;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 2rem;
+    box-sizing: content-box;
+    z-index: 1;
+  }
+  
+.ticker {
+    height: 2rem;
+    line-height: 2rem;
+    white-space: nowrap;
+    padding-left: 100%;
+    box-sizing: content-box;
+
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-name: ticker;
+    animation-name: ticker;
+    -webkit-animation-duration: 600s;
+    animation-duration: 600s;
+}
+
+.pause-ticker {
+    animation-play-state: paused !important;
+    cursor: default;
+}
+
+.ticker-item {
+    display: inline-block;
+    color: green;
+    padding: 0 2rem;
+    font-size: 1.5rem;
+}
+
+@-webkit-keyframes ticker {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translate(-4000%, 0);
+        transform: translate(-4000%, 0);
+    }
+}
+
+@keyframes ticker {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translate(-4000%, 0);
+        transform: translate(-4000%, 0);
+    }
+}
+
+.marketPlace {
+    position: absolute;
+    left: -45%;
+    width: 45%;
+    background-color: white;
+    height: 93.5%;
+    z-index: 2;
+    transition: all .5s ease;
+}
+.showMarketPlace {
+    left: 0px;
+    transition: all .5s ease;
+}
+
+.marketPlaceBtn {
+    position: absolute;
+    right: -25px;
+    top: 200px;
+    z-index: 4;
+    background-color: white;
+    height: 45px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.marketPlaceBtn span {
+    color: #5540c7;
+    height: 24px;
+    width: 24px;
+}
+
+.marketPlaceBtn:hover {
+    cursor: pointer;
+}
+
+.marketPlace .sectionContainer {
+    width: 100%;
+    overflow: hidden;
+    max-height: 89%;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.marketPlace .sectionContainer .sectionWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 20px;
+    position: relative;
+    min-width: 100%;
+}
+.marketPlace .sectionContainer .sectionWrapper.seeAllTrending {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-self: flex-start;
+    margin-left: 20px;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    height: 800px;
+    min-width: 97.7%;
+    z-index: 50;
+    background-color: white;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.marketPlace .sectionContainer .sectionWrapper.seeAllForSale {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-self: flex-start;
+    margin-left: 20px;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 97.7%;
+    height: 800px;
+    z-index: 50;
+    max-height: 800px;
+    background-color: white;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.marketPlace .sectionContainer .sectionWrapper .section.seeAllSection {
+    flex-wrap: wrap;
+}
+.marketPlace .sectionContainer .sectionWrapper .section .item.seeAllItems {
+    margin: 5px 50px 20px 0px;
+}
+
+.marketPlace .sectionContainer .sectionWrapper .title {
+    color: grey;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 4px;
+    margin-bottom: 10px;
+}
+
+.marketPlace .sectionContainer .sectionWrapper .seeAllBtn {
+    border: none;
+    color: grey;
+    font-weight: bold;
+    font-size: 12px;
+    position: absolute;
+    right: 25px;
+    top: 5px;
+}
+.marketPlace .sectionContainer .sectionWrapper .seeAllBtn:hover {
+    cursor: pointer;
+}
+
+.marketPlace .sectionContainer .sectionWrapper .section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.marketPlace .sectionContainer .sectionWrapper .section .item {
+    border: 1px solid purple;
+    border-radius: 20px;
+    height: 140px;
+    width: 230px;
+    margin: 0px 15px 0px 4px;
+    position: relative;
+}
+
+.marketPlace .sectionContainer .sectionWrapper .section .item .backgroundPhoto {
+    width: 100%;
+    height: 60%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.marketPlace .sectionContainer .sectionWrapper .section .item .listedBy {
+    margin: 4px 0px 0px 10px;
+}
+
+.marketPlace .sectionContainer .sectionWrapper .section .item .propertyName {
+    margin: 5px 0px 0px 10px;
+}
+
+.marketPlace .sectionContainer .sectionWrapper .section .item .propertyPrice {
+    margin: 0px 0px 0px 10px;
+}
+
+.marketPlace .sectionContainer .sectionWrapper .backBtn {
+    margin: 10px 0px 20px 0px;
+}
+
+.marketPlace .sectionContainer .sectionWrapper .backBtn:hover {
+    cursor: pointer;
+}
+
+.marketPlace .sectionContainer .sectionWrapper .filters { 
+    position: absolute;
+    right: 40px;
+    top: 50px;
+}
+
+.marketPlace .sectionContainer .sectionWrapper .filters:hover { 
+    cursor: pointer;
+}
