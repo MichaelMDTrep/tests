@@ -1501,68 +1501,38 @@ const MapGL = () => {
             <div className='tickerContainer'>
 
             </div>
-  {/* const copyReferralLink = () => {
-                            copy(referralLink)
-                        } */}
+  
 
             <Modal
 
-                        style={{
-                            overlay: {
-                              position: 'fixed',
-                              top: 0,
-                              left: 0,
-                              right: 0,
-                              bottom: 0,
-                              backgroundColor: 'rgba(255, 255, 255, 0.75)'
-                            },
-                            content: {
-                              position: 'absolute',
-                              top: '40px',
-                              left: '40px',
-                              right: '40px',
-                              bottom: '40px',
-                              border: '1px solid #ccc',
-                              background: '#fff',
-                              overflow: 'auto',
-                              WebkitOverflowScrolling: 'touch',
-                              borderRadius: '4px',
-                              outline: 'none',
-                              padding: '20px',
-                              backgroundColor: "white"
-
-                            }
-                        }}
-                      
-                        
-                open={buyPropertyModalOpen} onClose={() => setBuyPropertyModalOpen(false)}>
-                                        <h1>Congratulations</h1>
-                                        
-                                      
-                <p><b>Share SuperWorld with friends and get a FREE plot when they purchase property using your referral.</b></p>
-                <MenuItem style={{paddingLeft: '60px'}}>
-                
-                    <div className='referral' onClick={copyReferralLink} >
-                        <span id='referralLink'><u>Copy Your Referral Link</u></span>
-                    </div>
-                </MenuItem>
-                <MenuItem  style={{paddingLeft: '68px'}}>
-                    <div className='referrals'>
-                        <a className="btn-facebook btn-hover" href={`https://www.facebook.com/sharer/sharer.php?u=${referralLink}`} target='share' />
-                        <a className="btn-twitter btn-hover" href={`https://twitter.com/home?status=${encodeURI("SuperWorld AR Real Estate")} ${referralLink}`} target='share' />
-                        <a className="btn-linkedin btn-hover" href={`https://www.linkedin.com/shareArticle?url=${referralLink}&title=${encodeURI('SuperWorld AR Real Estate')}`} target='share' />
-                        <a className="btn-email btn-hover" href={`mailto:?subject=${encodeURI('SuperWorld AR Real Estate')}&body=${referralLink}`} target='share' />
-                    </div>
-                  
-                </MenuItem>
-          
- 
-            </Modal>
-          
-   
-                        <div id="text">Overlay Text</div>
-
-    )
+style={{
+    // overlay: {
+    //     position: 'fixed',
+    //     top: 0,
+    //     left: 0,
+    //     right: 0,
+    //     bottom: 0,
+    //     backgroundColor: 'rgba(255, 255, 255, 0.75)'
+    // },
+    //     content: {
+    position: 'absolute',
+    top: '40px',
+    left: '40px',
+    right: '40px',
+    bottom: '40px',
+    border: '1px solid #fff',
+    background: '#fff',
+    overflow: 'auto',
+    WebkitOverflowScrolling: 'touch',
+    borderRadius: '4px',
+    outline: 'none',
+    padding: '20px',
+    backgroundColor: '1px solid #fff'
+    //     }
+}}
+open={buyPropertyModalOpen} onClose={() => setBuyPropertyModalOpen(false)}>
+<h1>Congratulations</h1>
+</Modal>
 
             < Header
                 onChangeListener={searchOnChange}
